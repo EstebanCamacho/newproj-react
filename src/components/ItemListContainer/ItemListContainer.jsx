@@ -1,10 +1,23 @@
 import './itemlistcontainer.css';
+import arrayProductos from '../Products/Products';
+import '../Card/Card'
+import Card from '../Card/Card';
 
-const ItemListContainer = (props) => {
-            return (
-                <h1 class="container">{props.greeting}</h1>
-            )
-                
-}
+
+
+function ItemListContainer(){
+            
+     console.log(arrayProductos)
+    
+    return (
+                <div>
+                    ItemListContainer
+                    {arrayProductos.map((cardInArray) => (
+                    <Card key={cardInArray.id} {...cardInArray} />
+                    ))}
+                </div> 
+                 
+                );
+            }
 
 export default ItemListContainer;
