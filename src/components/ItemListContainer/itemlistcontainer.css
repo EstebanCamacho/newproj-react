@@ -1,5 +1,12 @@
-.container{
-    margin-top: 100px;
-    margin-bottom: 100px;
-    color: rgb(129, 97, 27)
+.stylecat{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+
+.mapprod{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    margin-left: 75px;
 }

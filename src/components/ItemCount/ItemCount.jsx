@@ -1,4 +1,4 @@
-import './itemcount.css'
+import './itemcount.css';
 import {useState} from "react";
 
 function ItemCount({stock}) {
@@ -31,4 +31,4 @@ function ItemCount({stock}) {
   )
 }
 
-export default ItemCount
+export default ItemCount;
