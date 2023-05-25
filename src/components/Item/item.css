@@ -16,11 +16,11 @@
 .styleimg{
     border: red solid 3px;
     height: 200px;
-    
 }
 
 .styleprod{
     font-size: 25px;
+    text-decoration: none;
 }
 
 .stylenom{
