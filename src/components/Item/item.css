@@ -4,12 +4,11 @@
     justify-content: center;
 }
 
-
 .stylecard{
-    width: 300px;
+    
     height: 500px;
     margin-bottom: 25px;
-    margin-right: 80px;
+    margin-right: 2px;
     color: black;
 }
 
@@ -19,12 +18,12 @@
 }
 
 .styleprod{
-    font-size: 25px;
-    text-decoration: none;
+    font-size: 20px;
+    
 }
 
 .stylenom{
-    font-size: 35px;
+    font-size: 28px;
 }
 
 .styleprecio{
@@ -32,3 +31,7 @@
     margin-bottom: 35px;
 }
 
+.new_styleprecio{
+    margin-top: 0px;
+    margin-bottom: 18px;
+}

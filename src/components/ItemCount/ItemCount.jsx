@@ -1,20 +1,20 @@
 import './itemcount.css';
 import { useState } from "react";
 
-function ItemCount({ stock }) {
+function ItemCount({ stock, onAddToCart }) {
 
-  const [count, setCount] = useState(1);
+  const [count, setCount] = useState(0);
 
   function handleAdd() {
     if (count < stock) setCount(count + 1)
   }
 
   function handleSubstract() {
-    if (count > 1) setCount(count - 1)
+    if (count > 0) setCount(count - 1)
   }
 
   let isDisabledAdd = count === 5;
-  let isDisabledSubstract = count === 1;
+  let isDisabledSubstract = count === 0;
 
 
   return (
@@ -25,7 +25,7 @@ function ItemCount({ stock }) {
         <button disabled={isDisabledAdd} className="countersuma" onClick={handleAdd}>+</button>
       </div>
       <div>
-        <button className="counteragreg">Agregar al carrito</button>
+        <button onClick={() => {onAddToCart(count)}} className="counteragreg">Agregar al Carrito</button>
       </div>
     </>
   )
