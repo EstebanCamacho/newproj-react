@@ -119,7 +119,7 @@ const arrayProductos = [
     descripcion: "Café frío elaborado en base a café instantáneo, hielo, crema de leche y dos bolas de helado de chocolate",
     precio: 619.90,
     stock: 2,
-    imagen: "/src/assets/cafeazteca.jpg",
+    imagen: "/public/images/cafeazteca.jpg",
 },
 
 {   id: 13,
