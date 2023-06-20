@@ -53,7 +53,7 @@ if(product) {
         <p class="card-text"><small class="text-muted stock">Stock: {product.stock}</small></p>
         
         {countInCart === 0 ? (
-          <ItemCount onAddToCart={onAddToCart} stock={5}/>
+          <ItemCount onAddToCart={onAddToCart} stock={product.stock}/>
         ) : (
           <Link to="/cart">Ir al Carrito</Link>
         )}
