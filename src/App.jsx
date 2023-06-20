@@ -6,12 +6,14 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { CartContextProvider } from './context/cartContext';
 import CartView from './components/CartView/CartView';
 import OrderConfirm from './components/OrderConfirm/OrderConfirm';
+import {exportData} from './services/helpers';
 
 function App() {
 return (
   <CartContextProvider>
       <BrowserRouter>
       <NavBar />
+      <button onClick={exportData}>Export data</button>
       <Routes>
         <Route path="/" element={<ItemListContainer />} />
         <Route path="/product/:id" element={<ItemDetailContainer />} />

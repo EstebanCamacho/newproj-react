@@ -1,8 +1,8 @@
-import './cartwidget.css'
-import iconocarrito from '../../assets/iconocarrito.jpg'
-import { useContext } from 'react'
-import { cartContext } from '../../context/cartContext'
-import { Link } from 'react-router-dom'
+import './cartwidget.css';
+import iconocarrito from '../../../public/images/iconocarrito.jpg';
+import { useContext } from 'react';
+import { cartContext } from '../../context/cartContext';
+import { Link } from 'react-router-dom';
 
 const CartWidget = () => {
     const {countItems} = useContext(cartContext);
