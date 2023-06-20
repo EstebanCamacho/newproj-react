@@ -5,12 +5,15 @@ import "./cartview.css";
 import CheckoutForm from "../CheckoutForm/CheckoutForm";
 import { createOrderWithStockUpdate } from '../../services/firebase';
 import { useNavigate } from "react-router-dom";
+import Swal from 'sweetalert2';
 
 function CartView(){
     const { cart, removeItem, countTotalPrice, clear } = useContext(cartContext);
     const navigateTo = useNavigate();
 
-    async function handleConfirm(userData){
+    
+
+   async function handleConfirm(userData){
         const order = {
             items: cart,
             buyer: userData,
@@ -28,46 +31,49 @@ navigateTo(`/order-confirmation/${id}`)
     }
 }
 
-return (
+if (countTotalPrice() !== 0) return (
         <>
-          <h1>Tu Carrito</h1>
+        <h1>Tu Carrito</h1>
+                    <tr className='style-row-principal'>
+                    <td className='style-column'>Producto</td>
+                    <td className='style-column'>Item</td>
+                    <td className='style-column'>Precio U.</td>
+                    <th className='style-column'>Cantidad</th>
+                    <th className='style-column'>Total-Item</th>
+                    <th className='style-column'>Remover</th>
+                    </tr>
             
-            <thead className="cartList_head">
-                <tr className="cartlist_row">
-                    <th className='how'>Miniatura</th>
-                    <th>Titulo</th>
-                    <th>Precio</th>
-                    <th>Cantidad</th>
-                    <th>Remover</th>
-                    <th>Total</th>
-                </tr>
-            </thead>
-            <tbody>
+            <tbody className='style-body'>
             {cart.map ((item) => (
-              <tr key={item.id} className="cartlist_row">
+              <tr className='style-row-principal' key={item.id} >
                 <td>
-                    <img height={50} src={item.imagen} alt={item.producto} />
+                    <img className='style_img' src={item.imagen} alt={item.producto} />
                 </td>
-                <td>{item.nombre}</td>
-                <td>{item.precio}</td>
-                <td>{item.count}</td>    
+                <td className='name_row'>{item.nombre}</td>
+                <td className='name_row-precio'>$ {(item.precio).toFixed(2)}</td>
+                <td className='name_row-count'>{item.count}</td>    
+                <td className='name_row-count'>$ {(item.precio * item.count).toFixed(2)}</td>
                 <td>
-                <button color="#d95555" onClick={() => removeItem(item.id)}>
-                <img src="../../src/assets/cestobasura.svg" alt="icono de un cesto de basura" />
+                <button className='name_row-button' onClick={() => removeItem(item.id)}>
+                <img className='img_row' src="../../src/assets/cestobasura.svg" alt="icono de un cesto de basura" />
                 </button>
                 </td>
-                <th>$ { (item.precio * item.count).toFixed(2) }</th>
-              </tr>
+               </tr>
                 ))}
             </tbody>
-            
-
                 <div className="cartList_detail">
-                    <h4>El total de tu compra es de $ --,--</h4>
+                    <h4>Precio Total de compra: $ {countTotalPrice().toFixed(2)}</h4>
                     <CheckoutForm onConfirm={handleConfirm} />
                 </div>
-        </>
+            </>
     );
+
+    return (
+        Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Tu carrito está vacío! Por favor regresa a Homepage',
+        }))
 }
-        
+
 export default CartView;

@@ -19,6 +19,7 @@ return (
             <span className="numero">{countItems()}</span>
         </Link>
     )
+
 }
 
 export default CartWidget; 

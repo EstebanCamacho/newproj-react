@@ -5,8 +5,8 @@ function OrderConfirm() {
 const {orderid} = useParams();    
   return (
       <div>
-        <h1>Gracias por tu compra!</h1>
-        <small>Este es tu comprobante de compra: {orderid}</small>
+        <h1>Gracias por su compra!</h1>
+        <small>Su comprobante de compra es: {orderid}</small>
       </div>
   );
 }

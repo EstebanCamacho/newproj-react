@@ -36,23 +36,23 @@ const label = { width: '100px', marginRight: 4 };
 
 return(
     <form className="checkoutform-container" onSubmit={onSubmit}>
-        <h1>Ingresa tus datos para completar la compra</h1>
+        <h1 className="title_form">Por favor, ingrese sus datos para completar la compra</h1>
         <div style={styleInput}> 
             <label style={label}>Nombre</label>
-            <input value={userData.nombre} name="nombre" type="text" onChange={onInputChange} />
+            <input className="form" value={userData.nombre} name="nombre" type="text" onChange={onInputChange} />
         </div>
         <div style={styleInput}> 
             <label style={label}>Teléfono</label>
-            <input value={userData.phone} name="phone" type="text" onChange={onInputChange} />
+            <input className="form" value={userData.phone} name="phone" type="text" onChange={onInputChange} />
         </div>
         <div style={styleInput}> 
             <label style={label}>Email</label>
-            <input value={userData.email} name="email" type="text" onChange={onInputChange} />
+            <input className="form" value={userData.email} name="email" type="text" onChange={onInputChange} />
         </div>
-        <button>
+        <button className="orden_button">
         Crear orden
         </button>
-        <button onClick={handleReset}>
+        <button className="orden_button" onClick={handleReset}>
         Vaciar
         </button> 
     </form>
