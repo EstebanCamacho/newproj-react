@@ -19,7 +19,7 @@ const arrayProductos = [
     precio: 499.90,
     stock: 12,
     descuento: 15,
-    imagen: "/src/assets/cafeamericano.jpg",
+    imagen: "/public/cafeamericano.jpg",
 },
 
 {   id: 3,
