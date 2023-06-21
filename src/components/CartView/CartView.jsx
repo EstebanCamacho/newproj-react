@@ -55,7 +55,7 @@ if (countTotalPrice() !== 0) return (
                 <td className='name_row-count'>$ {(item.precio * item.count).toFixed(2)}</td>
                 <td>
                 <button className='name_row-button' onClick={() => removeItem(item.id)}>
-                <img className='img_row' src="../../../public/images/cestobasura.svg" alt="icono de un cesto de basura" />
+                <img className='img_row' src="../../images/cestobasura.svg" alt="icono de un cesto de basura" />
                 </button>
                 </td>
                </tr>
