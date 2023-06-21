@@ -8,7 +8,7 @@ const arrayProductos = [
     precio: 499.90,
     stock: 10,
     descuento: 10,
-    imagen: "/public/images/cafeexpresso.jpg",
+    imagen: "/images/cafeexpresso.jpg",
 },
 
 {   id: 2,
@@ -19,7 +19,7 @@ const arrayProductos = [
     precio: 499.90,
     stock: 12,
     descuento: 15,
-    imagen: "/public/images/cafeamericano.jpg",
+    imagen: "/images/cafeamericano.jpg",
 },
 
 {   id: 3,
@@ -29,7 +29,7 @@ const arrayProductos = [
     descripcion: "Café similar al expresso pero con mayor volumen. Se diferencia del americano en que no se agrega agua externa al expresso sino infusión",
     precio: 549.90,
     stock: 12,
-    imagen: "/public/images/cafelungo.jpg",
+    imagen: "/images/cafelungo.jpg",
 },
 
 {   id: 4,
@@ -39,7 +39,7 @@ const arrayProductos = [
     descripcion: "Café similar al expresso con el agregado de una pequeña cantidad de leche caliente que mancha al café",
     precio: 519.90,
     stock: 15,
-    imagen: "/public/images/cortadito.png",
+    imagen: "/images/cortadito.png",
 },
 
 {   id: 5,
@@ -49,7 +49,7 @@ const arrayProductos = [
     descripcion: "Café similar al cortado pero con un mayor agregado de leche, enproporción semejante a la de café. El sabor es más dulce y menos intenso que el del cortado pero sigue siendo importante la presencia de cafeína",
     precio: 579.90,
     stock: 18,
-    imagen: "/public/images/cafeconleche.jpeg",
+    imagen: "/images/cafeconleche.jpeg",
 },
 
 {   id: 6,
@@ -59,7 +59,7 @@ const arrayProductos = [
     descripcion: "Similar al café con leche pero el lácteo utilizado es leche condensada, lo que le confiere un sabor más dulce. La leche condensada se vierte primero para completar a continuación con el café de grano molido tipo arábigo. Se completa con una capa superior de espuma de leche y virutas de chocolate",
     precio: 579.90,
     stock: 2,
-    imagen: "/public/images/cafebombon.jpg",
+    imagen: "/images/cafebombon.jpg",
 },
 
 {   id: 7,
@@ -69,7 +69,7 @@ const arrayProductos = [
     descripcion: "Café expresso con agregado de leche, siendo de un tercio la proporción del primero en forma aproximada. Se completa con crema de leche en la parte superior, cacao en polvo y canela",
     precio: 649.90,
     stock: 11,
-    imagen: "/public/images/cafecappuccino.jpg",
+    imagen: "/images/cafecappuccino.jpg",
 },
 
 {   id: 8,
@@ -79,7 +79,7 @@ const arrayProductos = [
     descripcion: "Café expresso con agregado de crema de leche en menor proporción que el café",
     precio: 649.90,
     stock: 2,
-    imagen: "/public/images/cafevienes.jpg",
+    imagen: "/images/cafevienes.jpg",
 },
 
 {   id: 9,
@@ -89,7 +89,7 @@ const arrayProductos = [
     descripcion: "Café cappuccino con agregado de dulce de leche y salsa de chocolate disueltos",
     precio: 679.90,
     stock: 8,
-    imagen: "/public/images/cafetentacion.jpg",
+    imagen: "/images/cafetentacion.jpg",
 },
 
 {   id: 10,
@@ -99,7 +99,7 @@ const arrayProductos = [
     descripcion: "Café lungo con agregado de whisky irlandés y una capa superior de crema de leche",
     precio: 749.90,
     stock: 3,
-    imagen: "/public/images/cafeirlandes.jpeg",
+    imagen: "/images/cafeirlandes.jpeg",
 },
 
 {   id: 11,
@@ -109,7 +109,7 @@ const arrayProductos = [
     descripcion: "Café frío elaborado en base a café instantáneo, hielo y una capa superior de crema de leche, con agregado de dulce de leche o salsa de chocolate, a elección",
     precio: 649.90,
     stock: 12,
-    imagen: "/public/images/cafefrappe.jpg",
+    imagen: "/images/cafefrappe.jpg",
 },
 
 {   id: 12,
@@ -119,7 +119,7 @@ const arrayProductos = [
     descripcion: "Café frío elaborado en base a café instantáneo, hielo, crema de leche y dos bolas de helado de chocolate",
     precio: 619.90,
     stock: 2,
-    imagen: "/public/images/cafeazteca.jpg",
+    imagen: "/images/cafeazteca.jpg",
 },
 
 {   id: 13,
@@ -129,7 +129,7 @@ const arrayProductos = [
     descripcion: "Bebida elaborada con leche entera y chocolate semiamargo, aromatizado con granos de vainilla y canela",
     precio: 589.90,
     stock: 2,
-    imagen: "/public/images/chocolatecaliente.jpg",
+    imagen: "/images/chocolatecaliente.jpg",
 },
 
 {   id: 14,
@@ -139,7 +139,7 @@ const arrayProductos = [
     descripcion: "Gaseosas de la línea Coke: Coca-Cola, Fanta o Sprite (original o zero en todos los casos) y gaseosas de la línea Aquarius, todas ellas en envase plástico de 500 ml",
     precio: 289.90,
     stock: 15,
-    imagen: "/public/images/gaseosas.jpg",
+    imagen: "/images/gaseosas.jpg",
 },
 
 {   id: 15,
@@ -149,7 +149,7 @@ const arrayProductos = [
     descripcion: "Jugo de naranja natural exprimido",
     precio: 289.90,
     stock: 7,
-    imagen: "/public/images/jugodenaranja.jpg",
+    imagen: "/images/jugodenaranja.jpg",
 },
 
 {   id: 16,
@@ -159,7 +159,7 @@ const arrayProductos = [
     descripcion: "Agua mineral marca Kin baja en sodio, en envase plástico de 600 cc",
     precio: 189.90,
     stock: 12,
-    imagen: "/public/images/aguamineral.jpg",
+    imagen: "/images/aguamineral.jpg",
 },
 
 {   id: 17,
@@ -169,7 +169,7 @@ const arrayProductos = [
     descripcion: "Triángulo panificado esponjoso elaborado en base a harina y manteca, cubierto con una capa de almíbar",
     precio: 119.90,
     stock: 25,
-    imagen: "/public/images/medmanteca.jpg",
+    imagen: "/images/medmanteca.jpg",
 },
 
 {   id: 18,
@@ -179,7 +179,7 @@ const arrayProductos = [
     descripcion: "Triángulo panificado crocante elaborado en base a harina y superficie ligeramente hojaldrada",
     precio: 119.90,
     stock: 28,
-    imagen: "/public/images/medgrasa.jpg",
+    imagen: "/images/medgrasa.jpg",
 },
 
 {   id: 19,
@@ -189,7 +189,7 @@ const arrayProductos = [
     descripcion: "Medialuna de manteca caliente, rellena con jamón cocido y queso",
     precio: 279.90,
     stock: 15,
-    imagen: "/public/images/medrellenas.jpg",
+    imagen: "/images/medrellenas.jpg",
 },
 
 {   id: 20,
@@ -200,7 +200,7 @@ const arrayProductos = [
     precio: 49.90,
     stock: 29,
     descuento: 5,
-    imagen: "/public/images/alfajmaicena.png",
+    imagen: "/images/alfajmaicena.png",
 },
 
 {   id: 21,
@@ -210,7 +210,7 @@ const arrayProductos = [
     descripcion: "Producto elaborado con harina, almidón de maíz, cacao y esencia de vainilla, con relleno de dulde de leche y una cubierta de chocolate negro",
     precio: 69.90,
     stock: 3,
-    imagen: "/public/images/alfajchoc.jpg",
+    imagen: "/images/alfajchoc.jpg",
 },
 
 {   id: 22,
@@ -220,7 +220,7 @@ const arrayProductos = [
     descripcion: "Producto elaborado con harina, almidón de maíz, margarina y esencia de vainilla, con relleno de dulde de leche y una cubierta de chocolate blanco glaseado",
     precio: 69.90,
     stock: 5,
-    imagen: "/public/images/alfajblanco.jpg",
+    imagen: "/images/alfajblanco.jpg",
 },
 
 {   id: 23,
@@ -230,7 +230,7 @@ const arrayProductos = [
     descripcion: "Flan casero individual elaborado en base a leche, huevos y esencia de vainilla. Se presenta con una porción de dulce de leche o crema chantilly",
     precio: 219.90,
     stock: 15,
-    imagen: "/public/images/flancasero.jpg",
+    imagen: "/images/flancasero.jpg",
 },
 
 {   id: 24,
@@ -240,7 +240,7 @@ const arrayProductos = [
     descripcion: "Postre en capas elaborado en base a café, mascarpone, yemas de huevo y vainilla, aromatizado con vino oporto. Se presenta en porciones de 100 gramos",
     precio: 289.90,
     stock: 9,
-    imagen: "/public/images/tiramisu.jpeg",
+    imagen: "/images/tiramisu.jpeg",
 },
 
 {   id: 25,
@@ -250,7 +250,7 @@ const arrayProductos = [
     descripcion: "Postre original elaborado en base a capas alternadas de bizcochuelo, crema chantilly, marrón glasé, nueces, dulce de leche y merengue. Se presenta en porciones de 100 gramos",
     precio: 359.90,
     stock: 8,
-    imagen: "/public/images/postrebalcarce.jpg",
+    imagen: "/images/postrebalcarce.jpg",
 },
 
 {   id: 26,
@@ -260,7 +260,7 @@ const arrayProductos = [
     descripcion: "Postre elaborado en base a capas de vainillas con manteca, chocolate de taza, agua tibia, aromatizado con vino oporto y espolvoreado con cacao. Se presenta en porciones de 100 gramos",
     precio: 329.90,
     stock: 8,
-    imagen: "/public/images/postredevainilla.jpg",
+    imagen: "/images/postredevainilla.jpg",
 },
 
 {   id: 27,
@@ -270,7 +270,7 @@ const arrayProductos = [
     descripcion: "Postre elaborado en base a bizcochuelo, crema chantilly, chocolate y cerezas, espolvoreado con cacao. Se presenta en porciones de 100 gramos",
     precio: 449.90,
     stock: 8,
-    imagen: "/public/images/postreselvanegra.jpg",
+    imagen: "/images/postreselvanegra.jpg",
 },
 
 {   id: 28,
@@ -280,7 +280,7 @@ const arrayProductos = [
     descripcion: "Postre frio elaborado con frutas crudas y jarabe de almíbar; se compone de uvas, frutillas, cerezas, arándanos y trozos de naranja, kiwi y duraznos. Se presenta en porción individual de 90 gramos",
     precio: 289.90,
     stock: 11,
-    imagen: "/public/images/ensaladafrutas.jpg",
+    imagen: "/images/ensaladafrutas.jpg",
 },
 
 {   id: 29,
@@ -290,7 +290,7 @@ const arrayProductos = [
     descripcion: "Un pan baguette con jamón cocido y queso en su interior, con una capa de mayonesa y aderezos a gusto",
     precio: 249.90,
     stock: 4,
-    imagen: "/public/images/sandbaguettejyq.jpg",
+    imagen: "/images/sandbaguettejyq.jpg",
 },
 
 {   id: 30,
@@ -300,7 +300,7 @@ const arrayProductos = [
     descripcion: "Un pan tipo pebete con jamón cocido y queso en su interior y aderezos a gusto",
     precio: 249.90,
     stock: 3,
-    imagen: "/public/images/sandpebetejyq.jpg",
+    imagen: "/images/sandpebetejyq.jpg",
 },
 
 {   id: 31,
@@ -310,7 +310,7 @@ const arrayProductos = [
     descripcion: "Triple capa de pan de miga con jamón cocido y queso en su interior, aderezado con una lámina de mayonesa en cada capa",
     precio: 279.90,
     stock: 15,
-    imagen: "/public/images/sandmigajyq.png",
+    imagen: "/images/sandmigajyq.png",
 },
 
 {   id: 32,
@@ -320,7 +320,7 @@ const arrayProductos = [
     descripcion: "Triple capa de pan de miga con jamón cocido y un segundo producto a gusto en su interior, aderezado con una lámina de mayonesa en cada capa",
     precio: 349.90,
     stock: 12,
-    imagen: "/public/images/sandmigaespeciales.jpg",
+    imagen: "/images/sandmigaespeciales.jpg",
 },
 
 {   id: 33,
@@ -330,7 +330,7 @@ const arrayProductos = [
     descripcion: "Dos capas de pan de miga tostadas con jamón cocido y queso en su interior",
     precio: 319.90,
     stock: 16,
-    imagen: "/public/images/tostados.jpg",
+    imagen: "/images/tostados.jpg",
 },
 
 {   id: 34,
@@ -340,7 +340,7 @@ const arrayProductos = [
     descripcion: "Sandwich elaborado con finas rodajas de jamón cocido italiano, queso feteado, huevo duro en rodajas, rúcula y salsa ketchup, todo ello entre dos rebanadas abiertas de pan francés tostado",
     precio: 429.90,
     stock: 3,
-    imagen: "/public/images/granjero.jpg",
+    imagen: "/images/granjero.jpg",
 },
 
 {   id: 35,
@@ -350,7 +350,7 @@ const arrayProductos = [
     descripcion: "Sandwich elaborado con milanesa de ternera, huevo frito, lechuga y rodajas de tomate redondo, todo ello entre dos rebanadas abiertas de pan francés y acompañado por una porción de papas fritas",
     precio: 459.90,
     stock: 8,
-    imagen: "/public/images/sandwichmilanesa.jpg",
+    imagen: "/images/sandwichmilanesa.jpg",
 },
 
 {   id: 36,
@@ -360,7 +360,7 @@ const arrayProductos = [
     descripcion: "Sandwich elaborado con una pechuga de pollo feteada, lechuga y rodajas de tomate redondo, todo ello entre dos rebanadas abiertas de pan francés y acompañado por una porción de papas fritas y salsa criolla",
     precio: 449.90,
     stock: 5,
-    imagen: "/public/images/sandwichpollo.jpg",
+    imagen: "/images/sandwichpollo.jpg",
 },
 ]
 
