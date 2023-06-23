@@ -10,14 +10,14 @@ function ItemListContainer() {
     let [products, setProducts] = useState([]);
     const { categoryid } = useParams();
 
-const fetchData = categoryid === undefined? getData : getCategoryData;
+    const fetchData = categoryid === undefined ? getData : getCategoryData;
 
     useEffect(() => {
         fetchData(categoryid)
-        .then((respuesta) => setProducts(respuesta))
-        .finally(() => {
-            setIsLoading(false)
-        });
+            .then((respuesta) => setProducts(respuesta))
+            .finally(() => {
+                setIsLoading(false)
+            });
     }, [categoryid]);
 
     return (

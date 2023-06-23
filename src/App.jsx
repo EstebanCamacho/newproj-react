@@ -9,21 +9,21 @@ import OrderConfirm from './components/OrderConfirm/OrderConfirm';
 
 
 function App() {
-return (
-  <CartContextProvider>
+  return (
+    <CartContextProvider>
       <BrowserRouter>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<ItemListContainer />} />
-        <Route path="/product/:id" element={<ItemDetailContainer />} />
-        <Route path="/category/:categoryid" element={<ItemListContainer />} />
-        <Route path="/cart" element={<CartView />} />
-        <Route path="/order-confirmation/:orderid" element={<OrderConfirm />} />
-        <Route path="*" element={<h4>Error 404 : Page not found</h4>} />
-      </Routes>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<ItemListContainer />} />
+          <Route path="/product/:id" element={<ItemDetailContainer />} />
+          <Route path="/category/:categoryid" element={<ItemListContainer />} />
+          <Route path="/cart" element={<CartView />} />
+          <Route path="/order-confirmation/:orderid" element={<OrderConfirm />} />
+          <Route path="*" element={<h4>Error 404 : Page not found</h4>} />
+        </Routes>
       </BrowserRouter>
     </CartContextProvider>
-)
+  )
 }
 
 export default App

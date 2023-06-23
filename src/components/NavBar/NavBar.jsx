@@ -3,13 +3,12 @@ import CartWidget from '../CartWidget/CartWidget';
 import { Link, useLocation } from 'react-router-dom';
 import { useContext, useEffect } from 'react';
 
-
 const NavBar = () => {
   let location = useLocation();
-  useEffect (() => {
-    window.scrollTo (0,0);
+  useEffect(() => {
+    window.scrollTo(0, 0);
   }, [location]);
-  
+
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary fs-4">

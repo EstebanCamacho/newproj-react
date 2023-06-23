@@ -8,28 +8,28 @@ function ItemCount({ stock, onAddToCart }) {
 
   function handleAdd() {
     if (count < stock) setCount(count + 1)
-    }
+  }
 
-    
+
   function handleSubstract() {
     if (count > 0) setCount(count - 1)
-    }
+  }
 
   let isDisabledAdd = count === stock;
   let isDisabledSubstract = count === 0;
 
-  if(count === 0) return(
+  if (count === 0) return (
     <>
       <div className="counter">
         <button disabled={isDisabledSubstract} className="counterresta" onClick={handleSubstract}>-</button>
         <button disabled={isDisabledAdd} className="countersuma" onClick={handleAdd}>+</button>
       </div>
       <div>
-        <button onClick={() => {onAddToCart(count)}} className="counteragreg">Agregar al Carrito</button>
+        <button onClick={() => { onAddToCart(count) }} className="counteragreg">Agregar al Carrito</button>
       </div>
     </>
-  ) 
-  return(
+  )
+  return (
     <>
       <div className="counter">
         <button disabled={isDisabledSubstract} className="counterresta" onClick={handleSubstract}>-</button>
@@ -37,7 +37,7 @@ function ItemCount({ stock, onAddToCart }) {
         <button disabled={isDisabledAdd} className="countersuma" onClick={handleAdd}>+</button>
       </div>
       <div>
-        <button onClick={() => {onAddToCart(count)}} className="counteragreg">Agregar al Carrito</button>
+        <button onClick={() => { onAddToCart(count) }} className="counteragreg">Agregar al Carrito</button>
       </div>
     </>
   )

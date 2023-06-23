@@ -1,10 +1,10 @@
 
 export default function Button() {
-    
+
     return (
         <>
-        <br />
-        <button></button>
+            <br />
+            <button></button>
         </>
     );
 };

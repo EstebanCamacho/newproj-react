@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 
 function Item({ producto, nombre, precio, imagen, id, descuento }) {
 
-const classNameStylePrecio =
-descuento? "new_styleprecio" : "styleprecio";
+  const classNameStylePrecio =
+    descuento ? "new_styleprecio" : "styleprecio";
 
   return (
     <Link className="text-decoration-none w-25 p-3 width: 800px" to={`/product/${id}`}>
@@ -16,8 +16,8 @@ descuento? "new_styleprecio" : "styleprecio";
           <div className="card-body">
             <h1 className="styleprod">{producto}</h1>
             <h2 className="stylenom">{nombre}</h2>
-            {descuento<=10 && <small style={{color: "green", margin:"none"}}>Descuento: {descuento} %</small>}
-            {descuento>10 && <small style={{color: "red"}}>¡Oferta Especial!</small>}
+            {descuento <= 10 && <small style={{ color: "green", margin: "none" }}>Descuento: {descuento} %</small>}
+            {descuento > 10 && <small style={{ color: "red" }}>¡Oferta Especial!</small>}
             <h3 className={classNameStylePrecio}>${precio}</h3>
             <a href="/" className="btn btn-primary">Ver Detalle</a>
           </div>
